@@ -349,7 +349,10 @@ function App() {
         camera={{ position: cameraPosition, fov: 75 }}
       >
         <ambientLight intensity={0.7} />
-        <Environment files="/hdr/empty_play_room_4k.hdr" background />
+        <Environment
+          files="https://raw.githubusercontent.com/Ashutosh-Chikhaliya/tiles-visulizer/main/public/hdr/empty_play_room_4k.hdr"
+          background
+        />
         <CombinedScene />
         <OrbitControls
           target={[0, 0, 0]} // Target the center of the scene
